@@ -1,4 +1,11 @@
-# Cars Dealership - Full-Stack Web Application
+# xrwvm-fullstack_developer_capstone
+## Cars Dealership - Full-Stack Web Application
+
+### Repository Name:
+`xrwvm-fullstack_developer_capstone`
+
+### Project Name:
+`Cars Dealership`
 
 ## Project Overview
 **Cars Dealership** is a comprehensive, responsive full-stack web application designed for a national car retailer in the United States. The platform enables customers to browse dealership branches across all 50 states, filter dealerships by location, view real-time inventory and customer reviews with automated sentiment analysis, and submit new reviews after purchasing vehicles.
@@ -29,4 +36,4 @@ The system is built using a modern microservices architecture:
 - **DevOps**: Docker, Kubernetes, GitHub Actions CI/CD, IBM Cloud Code Engine
 
 ## Authors & Acknowledgments
-- Developed by **Bao Lam** as part of the IBM Full Stack Software Developer Capstone Project.
+- Developed by **Bao Lam** as part of the IBM Full Stack Software Developer Capstone Project (`xrwvm-fullstack_developer_capstone`).
