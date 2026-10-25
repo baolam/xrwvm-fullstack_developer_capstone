@@ -1,0 +1,76 @@
+Run actions/checkout@v3
+Syncing repository: baolam/fullstack_developer_capstone
+Getting Git version info
+Copying '/home/runner/work/_actions/actions/checkout/v3/dist/index.js' to '/home/runner/work/_temp/...'
+/usr/bin/git version
+git version 2.43.0
+Initialized empty Git repository in /home/runner/work/fullstack_developer_capstone/fullstack_developer_capstone/.git/
+[command]/usr/bin/git remote add origin https://github.com/baolam/fullstack_developer_capstone
+[command]/usr/bin/git fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +refs/heads/main:refs/remotes/origin/main
+[command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+
+Run actions/setup-python@v4
+Installed versions:
+  python : 3.10.13
+
+Run python -m pip install --upgrade pip
+Collecting pip
+  Downloading pip-24.0-py3-none-any.whl (2.1 MB)
+Installing collected packages: pip
+Successfully installed pip-24.0
+Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages
+Collecting requests (from -r server/requirements.txt (line 1))
+  Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+Collecting Django (from -r server/requirements.txt (line 2))
+  Downloading Django-3.2.23-py3-none-any.whl (7.9 MB)
+Collecting Pillow (from -r server/requirements.txt (line 3))
+  Downloading Pillow-10.2.0-cp310-cp310-manylinux_2_28_x86_64.whl (4.5 MB)
+Collecting gunicorn (from -r server/requirements.txt (line 4))
+  Downloading gunicorn-21.2.0-py3-none-any.whl (80 kB)
+Collecting python-dotenv (from -r server/requirements.txt (line 5))
+  Downloading python_dotenv-1.0.1-py3-none-any.whl (19 kB)
+Collecting flake8
+  Downloading flake8-7.0.0-py2.py3-none-any.whl (57 kB)
+Successfully installed Django-3.2.23 Pillow-10.2.0 flake8-7.0.0 gunicorn-21.2.0 python-dotenv-1.0.1 requests-2.31.0
+
+Run flake8 server/djangoapp
+flake8 server/djangoapp --count --select=E9,F63,F7,F82 --show-source --statistics
+0
+flake8 server/djangoapp --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+0
+
+Run python server/manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, djangoapp, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying djangoapp.0001_initial... OK
+  Applying sessions.0001_initial... OK
+
+Run python server/manage.py test
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+Destroying test database for alias 'default'...
+
+Post job cleanup.
+Job completed with status: SUCCESS

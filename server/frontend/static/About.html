@@ -1,7 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Cars Dealership</title>
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
 </head>
+<body>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
@@ -25,44 +31,46 @@
     </div>
   </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
-    </div>
-    </div>
+  <div class="card" style="width: 80%;margin: auto; margin-top:5%; padding: 20px;">
+    <div class="banner" name="about-header" style="text-align: center; margin-bottom: 30px;">
+      <h1 style="color: #2c3e50; font-weight: bold;">Welcome to Best Cars Dealership</h1>
+      <p style="font-size: 1.15rem; color: #555; max-width: 850px; margin: auto;">
+        We are a leading national dealership network in the United States, providing top-quality certified pre-owned and new vehicles. Our mission is to deliver exceptional customer service, transparent vehicle history, and hassle-free car buying experiences.
+      </p>
     </div>
     
-</div>
+    <div style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+      <div class="card" style="width: 30%; min-width: 260px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img class="card-img-top" src="/static/person.png" alt="Alexander Hayes" style="height: 250px; object-fit: contain; background: #f8f9fa;">
+        <div class="card-body">
+          <h4 class="title" style="color: #007bff; font-weight: 600;">Alexander Hayes</h4>
+          <h6 class="text-muted">Chief Executive Officer</h6>
+          <p class="card-text">Alexander brings over 20 years of automotive leadership, guiding strategic expansions across nationwide dealership branches.</p>
+          <p class="text-primary font-weight-bold">alexander.hayes@carsdealership.com</p>
+        </div>
+      </div>
 
+      <div class="card" style="width: 30%; min-width: 260px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img class="card-img-top" src="/static/person.png" alt="Sarah Jenkins" style="height: 250px; object-fit: contain; background: #f8f9fa;">
+        <div class="card-body">
+          <h4 class="title" style="color: #007bff; font-weight: 600;">Sarah Jenkins</h4>
+          <h6 class="text-muted">Head of Customer Experience</h6>
+          <p class="card-text">Sarah leads our nationwide support team, ensuring that every buyer receives transparent guidance and top satisfaction.</p>
+          <p class="text-primary font-weight-bold">sarah.jenkins@carsdealership.com</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 30%; min-width: 260px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img class="card-img-top" src="/static/person.png" alt="Marcus Vance" style="height: 250px; object-fit: contain; background: #f8f9fa;">
+        <div class="card-body">
+          <h4 class="title" style="color: #007bff; font-weight: 600;">Marcus Vance</h4>
+          <h6 class="text-muted">Director of Technical Operations</h6>
+          <p class="card-text">Marcus oversees technical inspections, vehicle certification standards, and dealer inventory management systems.</p>
+          <p class="text-primary font-weight-bold">marcus.vance@carsdealership.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 </html>

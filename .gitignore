@@ -127,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Node modules
+node_modules/
+package-lock.json
+package.json
+capture_screenshots.js
